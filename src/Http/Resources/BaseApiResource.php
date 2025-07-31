@@ -194,7 +194,7 @@ class BaseApiResource extends JsonResource
                 }
             }
 
-            if ([] == $relationshipData->toArray(true)) {
+            if ([] == $relationshipData->toArray(request())) {
                 $relationshipData = [];
             }
         } elseif ($data instanceof Model) {
